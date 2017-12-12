@@ -1,0 +1,14 @@
+
+
+
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+.node_history
+
+# vscode service scripts
+.vscode
+
