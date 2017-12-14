@@ -65,7 +65,9 @@ const utils = (function () {
     }
 
     function fetchPostsService(url, num) {
-        return fetch(url)
+        const urlWithParams = `${url}?limit=${num}`
+
+        return fetch( urlWithParams )
             .then(function(response) {
                 return response.json();
             }).then(function(data) {
