@@ -14,7 +14,7 @@ const View = function (destElem) {
 
         const arrOfElements = []
 
-        postList.posts.forEach(el => {
+        postList.forEach(el => {
             const createdAtEl = $("<div class='postDate card-header'></div>").text(el.createdAt)
             const bodyEl = $("<div class='postText card-body'></div>").text( el.text )
             const authorNameEl = $("<div class='authorName'></div>").text(el.authorName)

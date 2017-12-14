@@ -68,8 +68,12 @@ const PostListModel = (function () {
                     data.forEach(el => {
                         _posts.push(new PostModel(el))
                     })
-                    this.posts = _posts;
-                    this.notify(this)
+                    const equal = utils.areArrsEqual(this.posts, _posts)
+                    if(!equal){
+                        this.posts = _posts;
+                        this.notify(this.posts)
+                    }
+
                 })
         }
 
